@@ -49,8 +49,8 @@ section {
     font-size: 50px; }
 
 
-.trialbee-blue {
-  color: rgb(147, 240, 74); 
+nav.navbar-blue, nav#mainNav {
+  background-color: rgb(0, 52, 158);
 }
 
 div.mg-top-100 {
@@ -83,9 +83,6 @@ button.btn-white{
   box-shadow: none!important;
 }
 
-.trialbee-blue-bg {
-  background-color: rgb(147, 240, 74); 
-}
 
 div.center {
   text-align: center;
