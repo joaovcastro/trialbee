@@ -60,44 +60,55 @@
             </li>
           </ul>
         </div>
-      </div>  
+      </div>
     </nav>
 
     <!-- Page Content -->
-        
-        
+
+
 
 
     <!-- Side Menu -->
     <section class="list-page">
-      
+
       <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="container">
-            <div class="row" style="text-align: center;">
-              <h1> Study Participant </h1>
+        <div class="container">
+          <div class="sidenav-header">
+            <div class="row">
+              <div class="col-xs-9">
+                <h5> FG342HY </h5>
+                <h1> Study Participant </h1>
+              </div>
+              <div class="col-xs-2" style="text-align: right;">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              </div>
             </div>
+            <div class="row prog-bar">
+              <img src="../img/list/progress-bg.png">
+            </div>
+          </div>
+          <div class="sidenav-body">
             <!-- Top Row -->
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-sm-4">
                 <div class="card card-sidenav">
-                  <div class="card-body center">
+                  <div class="card-body">
                     <img src="../img/details/participant-details.png">
                     <p class="card-title">Participant Details</p>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-sm-4">
                 <div class="card">
-                  <div class="card-body center">
+                  <div class="card-body">
                     <img src="../img/details/settings.png">
                     <p class="card-title">Configuration</p>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-sm-4">
                 <div class="card">
                   <div class="card-body">
                     <img src="../img/details/importantevents.png">
@@ -108,32 +119,35 @@
             </div>
             <!-- Bottom Row -->
             <div class="row" style="margin-top: 30px;">
-              <div class="col-md-4">
+              <div class="col-sm-4">
                 <div class="card card-sidenav">
                   <div class="card-body">
+                    <img src="../img/details/statistics.png">
                     <p class="card-title">Activity</p>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-sm-4">
                 <div class="card">
                   <div class="card-body">
+                    <img src="../img/details/notification.png">
                     <p class="card-title">Notifications</p>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-sm-4">
                 <div class="card">
                   <div class="card-body">
+                    <img src="../img/details/timeline.png">
                     <p class="card-title">Timeline</p>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
+        </div>
       </div>
 
         <div class="container">
@@ -145,9 +159,11 @@
             <thead>
               <tr>
                 <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
+                <th>Site</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>Status</th>
               </tr>
             </thead>
             <tbody>
@@ -173,7 +189,7 @@
           </table>
         </div>
     </section>
-      
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
