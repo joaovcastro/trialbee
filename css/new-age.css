@@ -78,6 +78,53 @@ button.rounded-corners {
   background: linear-gradient(to bottom, rgb(0, 52, 158) 0%,rgb(0, 52, 158) 50%,rgb(245, 245, 245) 50%,white 50%,white 100%); /* W3C */
 }
 
+div.white {
+  color: white;
+}
+
+h1.carousel-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h3.carousel-title {
+  font-size: 14pt;
+  color: #336486;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+div.carousel-text {
+  margin-top: 100px;
+}
+
+.light-blue {
+  color: #34B3F8;
+}
+
+div.carousel-content p{
+  margin-top: 30px;
+  margin-left: 5px;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+div.carousel-icon {
+  text-align: right;
+}
+
+div.carousel-page {
+  padding-top: 100px;
+}
+
+span.upper {
+  text-transform: uppercase;
+}
+
+img.carousel-image {
+  width: 100%;
+}
+
 .table {
   margin-top: 50px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -86,6 +133,10 @@ button.rounded-corners {
 
 .table:hover {
   box-shadow: 0 3px 9px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.24);
+}
+
+div.carousel-item div.col-md-5 {
+  margin-left: 7%;
 }
 
 div.sidenav-header {
@@ -223,6 +274,40 @@ section.studies {
   background: url("../img/background/bg-part-2.png") no-repeat, white;
 }
 
+.table thead th {
+  font-weight: 700;
+}
+
+nav.nabar-blue {
+  background-color: blue!important;
+}
+
+div.carousel {
+  background: url('../img/carousel/carousel-bg.png') center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+
+div.carousel-item img{
+  width: 70%!important;
+}
+
+img.flag {
+  height: 20px;
+  padding-right: 5px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+img.checkbox, img.status-img {
+  width: 20px;
+}
+
+.center {
+  text-align: center;
+}
 
 /* Custom Cards */
 
@@ -238,6 +323,10 @@ h4.card-title {
 
 .bold {
   font-weight: bold;
+}
+
+img.list-img {
+  height: 25px;
 }
 
 #mainNav {
