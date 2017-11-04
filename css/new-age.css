@@ -182,6 +182,11 @@ tr {
   font-weight: 300;
 }
 
+.carousel-indicators li{
+  margin-top: -100px!important;
+  cursor: pointer;
+}
+
 
 
 
@@ -247,6 +252,9 @@ div.right {
   text-align: left;
 }
 
+footer {
+  height: 70px;
+}
 .carousel-control-next-icon {
     background-image: url('../img/carousel/circle-arrow.png');
     width: 70px;
@@ -286,6 +294,18 @@ div.carousel-item div.col-md-5 {
 
  /* Side Menu -> Details */
 
+ div#mySidenav {
+   width: 50%; /* TODO ELIMINAR */
+   z-index: 999;
+ }
+
+
+ div.sidenav{
+   background: linear-gradient(to bottom, white 200px, white 200px,
+   lightgrey 200px, #f7f9fc 205px,#f7f9fc 100%);
+ }
+
+
 div.sidenav-header {
   display: block;
   margin-left: 30px;
@@ -298,69 +318,11 @@ div.sidenav-header div.card-text {
   vertical-align: middle;
 }
 
-
 div.sidenav-body p.card-title{
   font-family: 'Poppins', sans-serif;
   font-size: 10pt;
   font-weight: 500;
-  /**/
-}
-
-div.card-text {
-  text-align: center!important;
-  position: absolute;
-  bottom: 10px;
-  align-self: flex-end;
-}
-
-div.badge-card {
-  position: relative!important;
-}
-
-span.badge img.badge-icon{
-  position: absolute;
-  right: -20px;
-  top:0;
-  z-index: 99;
-
-  height: 40px;
-
-}
-
-div.sidenav-body div.card-body {
   text-align: center;
-
-}
-
-div.sidenav-body div.card-text {
-  text-align: center;
-    display: flex;
-}
-
-div.sidenav div.card div.img-frame {
-  height: 60px; /*can be anything*/
-  width: 60px; /*can be anything*/
-  /*position: relative;*/
-}
-
-
-div.sidenav div.card img{
-  max-height: 100%;
-  max-width: 100%;
-  height: 100%;
-  margin-left: 70%;
-  display: block;
-  margin-left: 60%;
-}
-
-div.sidenav-body {
-
-  text-align: center!important;
-}
-
-div#mySidenav {
-  width: 50%;
-  z-index: 999;
 }
 
 div.prog-bar {
@@ -368,10 +330,50 @@ div.prog-bar {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 15px;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
-div.prog-bar img {
+div.prog-bar img.background {
   width: 95%;
+  height: 13px;
+  top: 0;
+  left: 0;
+}
+
+div.prog-bar img.fill{
+  width:45%;
+  height: 13px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+img.badge-icon{
+  position: absolute;
+  top:-10px!important;
+  right: -15px!important;
+  z-index: 99;
+  height: 40px!important;
+}
+
+
+div.card-text {
+  text-align: center!important;
+  margin-top: 30px;
+}
+
+
+div.sidenav div.card div.img-frame {
+  height: 70px;
+  text-align: center;
+}
+
+div.sidenav div.card img{
+  max-height: 70px;
+  max-width: 70px;
 }
 
 div.sidenav div.card{
@@ -380,8 +382,8 @@ div.sidenav div.card{
   height: 150px;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   cursor: pointer;
+  text-align: center;
 }
-
 
 div.opacity-layer {
   background-color: rgba(0,0,0,0.5);
@@ -407,27 +409,12 @@ div.sidenav a.close-btn:hover {
   color: grey;
 }
 
-
-div.sidenav-header{
-  width: 100%;
-}
-
-div.sidenav{
-  background: linear-gradient(to bottom, white 0%, white 25%,
-  lightgrey 25%,#f7f9fc 26%,#f7f9fc 100%);
-}
-
-
-
 h5.sidenav-title {
   color: grey;
   font-size: 12pt;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-
 }
-
-
 
 h1.sidenav-title {
   font-family: 'Poppins', sans-serif;
@@ -446,26 +433,26 @@ div.sidenav div.card:hover {
 /** Sidebar **/
 /* The side navigation menu */
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    right: 0;
-    background-color: white; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s
 }
 
 /* When you mouse over the navigation links, change their color */
