@@ -11,6 +11,7 @@ html, body {
 
 body {
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  background-color: white!important;
 }
 
 a {
@@ -184,6 +185,7 @@ tr {
 
 
 
+
 /* Carousel Page */
 
 div.white {
@@ -191,8 +193,10 @@ div.white {
 }
 
 h1.carousel-title {
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 26pt;
 }
 
 h3.carousel-title {
@@ -200,25 +204,31 @@ h3.carousel-title {
   color: #336486;
   text-transform: uppercase;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 div.carousel-text {
-  margin-top: 100px;
+  margin-top: 180px;
 }
 
 .light-blue {
-  color: #34B3F8;
+  color: #00a8ef;
 }
 
 div.carousel-content p{
   margin-top: 30px;
   margin-left: 5px;
-  font-weight: 100;
   font-size: 12pt;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
 }
 
 div.carousel-icon {
   text-align: right;
+}
+
+div.carousel-item div.carousel-icon img {
+  width: 100px!important;
 }
 
 div.carousel-page {
@@ -231,6 +241,23 @@ span.upper {
 
 img.carousel-image {
   width: 100%;
+
+}
+div.right {
+  text-align: left;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../img/carousel/circle-arrow.png');
+    width: 70px;
+    height: 70px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../img/carousel/circle-arrow.png');
+    width: 70px;
+    height: 70px;
+    transform: rotate(180deg);
 }
 
 div.studies-row div.card {
@@ -256,6 +283,9 @@ div.carousel-item div.col-md-5 {
   margin-left: 7%;
 }
 
+
+ /* Side Menu -> Details */
+
 div.sidenav-header {
   display: block;
   margin-left: 30px;
@@ -263,14 +293,85 @@ div.sidenav-header {
   padding-bottom: 30px;
 }
 
+div.sidenav-header div.card-text {
+  max-height: 75%;
+  vertical-align: middle;
+}
+
+
+div.sidenav-body p.card-title{
+  font-family: 'Poppins', sans-serif;
+  font-size: 10pt;
+  font-weight: 500;
+  /**/
+}
+
+div.card-text {
+  text-align: center!important;
+  position: absolute;
+  bottom: 10px;
+  align-self: flex-end;
+}
+
+div.badge-card {
+  position: relative!important;
+}
+
+span.badge img.badge-icon{
+  position: absolute;
+  right: -20px;
+  top:0;
+  z-index: 99;
+
+  height: 40px;
+
+}
+
+div.sidenav-body div.card-body {
+  text-align: center;
+
+}
+
+div.sidenav-body div.card-text {
+  text-align: center;
+    display: flex;
+}
+
+div.sidenav div.card div.img-frame {
+  height: 60px; /*can be anything*/
+  width: 60px; /*can be anything*/
+  /*position: relative;*/
+}
+
+
+div.sidenav div.card img{
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin-left: 70%;
+  display: block;
+  margin-left: 60%;
+}
+
 div.sidenav-body {
-/*  background-color: grey;*/
+
+  text-align: center!important;
+}
+
+div#mySidenav {
+  width: 50%;
+  z-index: 999;
 }
 
 div.prog-bar {
   width: 100%;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+div.prog-bar img {
+  width: 95%;
 }
 
 div.sidenav div.card{
@@ -278,12 +379,64 @@ div.sidenav div.card{
   width: 175px;
   height: 150px;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+}
+
+
+div.opacity-layer {
+  background-color: rgba(0,0,0,0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  position: fixed!important;
+  display: none;
+}
+
+div.sidenav a.close-btn {
+  top: 40px;
+  right: 50px;
+  font-size: 36px;
+  margin-left: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+
+div.sidenav a.close-btn:hover {
+  color: grey;
+}
+
+
+div.sidenav-header{
+  width: 100%;
+}
+
+div.sidenav{
+  background: linear-gradient(to bottom, white 0%, white 25%,
+  lightgrey 25%,#f7f9fc 26%,#f7f9fc 100%);
 }
 
 
 
-div.sidenav div.card img{
-  width: 50px;
+h5.sidenav-title {
+  color: grey;
+  font-size: 12pt;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+
+}
+
+
+
+h1.sidenav-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20pt;
+}
+
+div.sidenav-body {
+  padding-top: 30px;
 }
 
 div.sidenav div.card:hover {
@@ -321,13 +474,7 @@ div.sidenav div.card:hover {
 }
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
+
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
@@ -339,6 +486,21 @@ div.sidenav div.card:hover {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+
+/* Carousel Page */
+
+p.carousel-paragraph {
+  margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.3px;
+  font-weight: 200;
+  line-height: 1.7em;
+}
+
+#navbarBlue .nav-item a.nav-link {
+  color: white!important;
 }
 
 /*******************************/
@@ -402,9 +564,14 @@ nav.nabar-blue {
 
 div.carousel {
   background: url('../img/carousel/carousel-bg.png') center;
-
+  background-size: 100% 80%;
   background-repeat: no-repeat;
-  margin-top: 100px;
+  margin-top: 50px;
+}
+
+div.container-fluid-full {
+  padding-left: 0! important;
+  padding-right: 0! important;
 }
 
 div.carousel-item img{

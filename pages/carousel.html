@@ -34,9 +34,9 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-blue" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="../img/logo/logo.png" /></a>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-shrink fixed-top main-nav-sec" id="mainNav">
+      <div class="container-fluid">
+        <a class="navbar-brand js-scroll-trigger" href="../index.html"><img src="../img/logo/logo.png" /></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -53,7 +53,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Lorem</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="pages/list.html">List</a>
+              <a class="nav-link js-scroll-trigger" href="list.html">List</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Login</a>
@@ -64,19 +64,20 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container carousel-page" style="margin-top: 100px;">
+    <div class="container-fluid container-fluid-full carousel-page" style="margin-top: 30px;">
 
       <div class="row">
-        <div class="col-sm-8 offset-sm-2">
+        <div class="col-sm-6 offset-sm-3">
           <h3 class="uppercase light-blue center"> Lorem Ipsum </h3>
-          <p> It was popularised in the 1960s with the release of Letraset
+          <p class="carousel-paragraph"> It was popularised in the 1960s with the release of Letraset
             sheets containing Lorem Ipsum passages, and more recently with desktop
             publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
       </div>
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="col-sm-12">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -86,15 +87,15 @@
           <!-- First Item -->
           <div class="carousel-item active">
             <div class="row">
-              <div class="col-md-4 right">
+              <div class="col-sm-4 right">
                 <img class="d-block carousel-image" align="right" src="../img/carousel/carousel-1.png" alt="Second slide">
               </div>
-              <div class="col-md-6 white carousel-text">
+              <div class="col-sm-6 white carousel-text">
                 <div class="row">
-                  <div class="col-md-3 carousel-icon">
+                  <div class="col-sm-3 carousel-icon">
                     <img src="../img/carousel/step-1-icon.png" />
                   </div>
-                  <div class="col-md-9">
+                  <div class="col-sm-8 sm-offset-2">
                     <div class="row ">
                       <h3 class="carousel-title"> Process </h3>
                     </div>
@@ -105,7 +106,7 @@
                   </div>
                 </div>
                 <div class="row carousel-content">
-                  <div class="colmd-9 offset-md-1">
+                  <div class="col-sm-9 offset-md-1">
                     <p>
                       The first message sent on the Moscow-Washington hotline on
                       August 30, 1963 was the test phrase <span class="upper">
@@ -120,15 +121,15 @@
           <!-- Second Item -->
           <div class="carousel-item">
             <div class="row">
-              <div class="col-md-4 right">
+              <div class="col-sm-4 right">
                 <img class="d-block carousel-image" align="right" src="../img/carousel/carousel-2.png" alt="Second slide">
               </div>
-              <div class="col-md-6 white carousel-text">
+              <div class="col-sm-6 white carousel-text">
                 <div class="row">
-                  <div class="col-md-3 carousel-icon">
+                  <div class="col-sm-3 carousel-icon">
                     <img src="../img/carousel/step-2-icon.png" />
                   </div>
-                  <div class="col-md-9">
+                  <div class="col-sm-9">
                     <div class="row ">
                       <h3 class="carousel-title"> Process </h3>
                     </div>
@@ -157,15 +158,15 @@
           <!-- Third Item -->
           <div class="carousel-item">
             <div class="row">
-              <div class="col-md-4 right">
+              <div class="col-sm-4 right">
                 <img class="d-block carousel-image" align="right" src="../img/carousel/carousel-3.png" alt="Second slide">
               </div>
-              <div class="col-md-6 white carousel-text">
+              <div class="col-sm-6 white carousel-text">
                 <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-sm-3 carousel-icon">
                     <img src="../img/carousel/step-3-icon.png" />
                   </div>
-                  <div class="col-md-9">
+                  <div class="col-sm-9">
                     <div class="row ">
                       <h3 class="carousel-title"> Process </h3>
                     </div>
@@ -175,13 +176,15 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <p>
-                    The first message sent on the Moscow-Washington hotline on
-                    August 30, 1963 was the test phrase <span class="upper">
-                    "The quick brown fox jumped over the lazy dog's back
-                    1234567890"
-                  </p>
+                <div class="row carousel-content">
+                  <div class="colmd-9 offset-md-1">
+                    <p>
+                      The first message sent on the Moscow-Washington hotline on
+                      August 30, 1963 was the test phrase <span class="upper">
+                      "The quick brown fox jumped over the lazy dog's back
+                      1234567890"
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -197,7 +200,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
+      </div>
     </div>
 
 
@@ -212,7 +215,7 @@
     <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="../js/new-age.min.js"></script>
+    <script src="../js/new-age.js"></script>
     <!-- Side Menu Script -->
     <script src="../js/side-menu.js"></script>
   </body>
