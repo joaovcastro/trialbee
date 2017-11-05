@@ -128,9 +128,6 @@ div.second-header p {
   margin-top: 30px;
 }
 
-div.second-header h1 {
-  font-weight: 500;
-}
 
 button.btn-transparent span.margin-left{
   margin-left: 5%;
@@ -188,82 +185,7 @@ tr {
   cursor: pointer;
 }
 
-/* Carousel Page */
 
-div.white {
-  color: white;
-}
-
-h1.carousel-title {
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
-  font-size: 26pt;
-}
-
-h3.carousel-title {
-  font-size: 14pt;
-  color: #336486;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-div.carousel-text {
-  margin-top: 180px;
-}
-
-.light-blue {
-  color: #00a8ef;
-}
-
-div.carousel-content p{
-  margin-top: 30px;
-  margin-left: 5px;
-  font-size: 12pt;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 100;
-}
-
-div.carousel-icon {
-  text-align: right;
-}
-
-div.carousel-item div.carousel-icon img {
-  width: 100px!important;
-}
-
-div.carousel-page {
-  padding-top: 100px;
-}
-
-span.upper {
-  text-transform: uppercase;
-}
-
-img.carousel-image {
-  width: 100%;
-
-}
-div.right {
-  text-align: left;
-}
-
-footer {
-  height: 70px;
-}
-.carousel-control-next-icon {
-    background-image: url('../img/carousel/circle-arrow.png');
-    width: 70px;
-    height: 70px;
-}
-
-.carousel-control-prev-icon {
-    background-image: url('../img/carousel/circle-arrow.png');
-    width: 70px;
-    height: 70px;
-    transform: rotate(180deg);
-}
 
 div.studies-row div.card {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -526,6 +448,9 @@ div.studies-row {
   margin-top: 30px;
 }
 
+div.white {
+  color: white;
+}
 
 div.mg-top-150 {
   margin-top: 200px;
@@ -549,7 +474,7 @@ nav.nabar-blue {
 
 div.carousel {
   background: url('../img/carousel/carousel-bg.png') center;
-  background-size: 100% 80%;
+  background-size: 110% 80%;
   background-repeat: no-repeat;
   margin-top: 50px;
 }
@@ -559,9 +484,7 @@ div.container-fluid-full {
   padding-right: 0! important;
 }
 
-div.carousel-item img{
-  width: 70%!important;
-}
+
 
 img.flag {
   height: 20px;
@@ -616,6 +539,9 @@ h4.card-title {
 img.list-img {
   height: 25px;
 }
+.light-blue {
+  color: #00a8ef;
+}
 
 #mainNav {
   border-color: rgb(0, 52, 158);
@@ -661,8 +587,95 @@ img.list-img {
     #mainNav .navbar-nav > li > a:focus:hover {
       color: #fdcc52; }
 
+  div.white {
+    color: white;
+  }
+
+  footer {
+    height: 70px;
+  }
+
+  .carousel-control-next-icon {
+      background-image: url('../img/carousel/circle-arrow.png');
+      width: 70px;
+      height: 70px;
+  }
+
+  .carousel-control-prev-icon {
+      background-image: url('../img/carousel/circle-arrow.png');
+      width: 70px;
+      height: 70px;
+      transform: rotate(180deg);
+  }
+
+
+
+
 /* For Desktop */
 @media (min-width: 992px) {
+
+  /* Carousel Page */
+  div.carousel-item img{
+    width: 70%!important;
+  }
+
+
+  h1.carousel-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26pt;
+  }
+
+  h3.carousel-title {
+    font-size: 14pt;
+    color: #336486;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  div.carousel-text {
+    margin-top: 180px;
+  }
+
+
+
+  div.carousel-content p{
+    margin-top: 30px;
+    margin-left: 5px;
+    font-size: 12pt;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+  }
+
+  div.carousel-icon {
+    text-align: right;
+  }
+
+  div.carousel-item div.carousel-icon img {
+    width: 100px!important;
+  }
+
+  div.carousel-page {
+    padding-top: 100px;
+  }
+
+  span.upper {
+    text-transform: uppercase;
+  }
+
+  img.carousel-image {
+    width: 100%;
+
+  }
+  div.right {
+    text-align: left;
+  }
+
+
+
+
   #mainNav .navbar-nav > li >  a.active {
     border-bottom: 1px solid white;
   }
@@ -698,6 +711,11 @@ img.list-img {
 
 /* For Mobile */
 @media (max-width: 990px) {
+  div.second-header h1.main-title {
+    font-weight: 600!important;
+  }
+
+
   /* Menu */
   #mainNav .navbar-nav > li > a, #mainNav .navbar-nav > li > a:focus {
     color: white;
@@ -836,13 +854,62 @@ img.list-img {
     position: absolute;
   }
 
-  div.carousel-item img {
-    margin-left: -15%;
+  div.carousel-page {
+    max-width: 100vw!important;
+  }
+
+  div.carousel-page h3 {
+    margin-top: 50px;
   }
 
 
+  div.carousel-item img.carousel-image {
+    width: 100%;
+    position: absolute;
+    clip: rect(0px,900px,350px, 0px);
+  }
+
+  .carousel-title {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    height: 70px;
+    margin-top: -30px;
+  }
+
+  div.carousel-icon {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: -30px;
+  }
+
+
+  ol.carousel-indicators  {
+    display: none;
+  }
+
+  div.carousel-icon img{
+    width: 80px;
+  }
+
+  span.carousel-control-next-icon, span.carousel-control-prev-icon {
+    background-size: 50px 50px;
+    margin-top: -130px;
+  }
+
+  div.carousel-content p {
+    min-height: 300px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+
+  div.carousel-text {
+    margin-top: 350px;
+  }
 
 }
+
 
 
 header.masthead {
@@ -853,6 +920,7 @@ header.masthead {
   color: white;
   background: url("../img/background/bg-part-1.png") no-repeat, white;
   background-size: 100% auto;
+
   header.masthead .header-content {
     max-width: 500px;
     margin-bottom: 100px;
