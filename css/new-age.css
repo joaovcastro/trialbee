@@ -698,6 +698,21 @@ img.list-img {
 
 /* For Mobile */
 @media (max-width: 990px) {
+  /* Menu */
+  #mainNav .navbar-nav > li > a, #mainNav .navbar-nav > li > a:focus {
+    color: white;
+    font-size: 14pt;
+  }
+
+  .navbar-nav {
+    height: 93vh;
+  }
+
+  #mainNav .navbar-nav > li  {
+    line-height: 15vh;
+  }
+
+
   /* First Page */
   header.masthead {
    background-size: 100vw 115vh!important;
@@ -806,6 +821,23 @@ img.list-img {
 
   div.margin-top{
     margin-top: 0!important;
+  }
+
+
+  /* Carousel Page */
+
+  p.carousel-paragraph {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  div.carousel {
+    background-size: 100vw 100vh;
+    position: absolute;
+  }
+
+  div.carousel-item img {
+    margin-left: -15%;
   }
 
 
