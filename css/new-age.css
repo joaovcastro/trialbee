@@ -160,6 +160,7 @@ section.studies div.card p.card-text {
 .list-page {
   height: 600px;
   background: linear-gradient(to bottom, rgb(0, 52, 158) 0%,rgb(0, 52, 158) 50%,rgb(245, 245, 245) 50%,white 50%,white 100%); /* W3C */
+  background-size: 100% auto;
 }
 
 
@@ -295,7 +296,6 @@ div.carousel-item div.col-md-5 {
  /* Side Menu -> Details */
 
  div#mySidenav {
-   width: 50%; /* TODO ELIMINAR */
    z-index: 999;
  }
 
@@ -636,9 +636,9 @@ img.list-img {
     #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
       color: #fcbd20; }
   #mainNav .navbar-toggler {
-    font-size: 12px;
+    font-size: 18px;
     padding: 8px 10px;
-    color: #222222; }
+    color: white; }
   #mainNav .navbar-nav > li > a {
     font-size: 11px;
     font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
@@ -649,7 +649,7 @@ img.list-img {
     font-weight: bold;
   }
     #mainNav .navbar-nav > li > a.active {
-      color: #fdcc52 !important;
+      color: white!important;
       background-color: transparent; }
       #mainNav .navbar-nav > li > a.active:hover {
         background-color: transparent; }
@@ -658,13 +658,14 @@ img.list-img {
 
     }
 
-  #mainNav .navbar-nav > li >  a.active {
-    border-bottom: 1px solid white;
-  }
+
     #mainNav .navbar-nav > li > a:hover,
     #mainNav .navbar-nav > li > a:focus:hover {
       color: #fdcc52; }
   @media (min-width: 992px) {
+    #mainNav .navbar-nav > li >  a.active {
+      border-bottom: 1px solid white;
+    }
     #mainNav {
       border-color: transparent!important;
       background-color: transparent; }
