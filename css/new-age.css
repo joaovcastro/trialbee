@@ -662,37 +662,92 @@ img.list-img {
     #mainNav .navbar-nav > li > a:hover,
     #mainNav .navbar-nav > li > a:focus:hover {
       color: #fdcc52; }
-  @media (min-width: 992px) {
-    #mainNav .navbar-nav > li >  a.active {
-      border-bottom: 1px solid white;
-    }
-    #mainNav {
-      border-color: transparent!important;
-      background-color: transparent; }
-      #mainNav .navbar-brand {
-        color: fade(rgb(0, 52, 158) , 70%); }
-        #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-          color: white; }
-      #mainNav .navbar-nav > li > a,
-      #mainNav .navbar-nav > li > a:focus {
-        color: rgba(255, 255, 255, 0.7); }
-        #mainNav .navbar-nav > li > a:hover,
-        #mainNav .navbar-nav > li > a:focus:hover {
 
-          color: white; }
-      #mainNav.navbar-shrink {
-        border-color: rgba(34, 34, 34, 0.1);
-        background-color: rgb(0, 52, 158); }
-        #mainNav.navbar-shrink .navbar-brand {
-           }
-          #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-            color: #fdcc52; }
-        #mainNav.navbar-shrink .navbar-nav > li > a,
-        #mainNav.navbar-shrink .navbar-nav > li > a:focus {
-           }
-          #mainNav.navbar-shrink .navbar-nav > li > a:hover,
-          #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-            color: #fdcc52; } }
+/* For Desktop */
+@media (min-width: 992px) {
+  #mainNav .navbar-nav > li >  a.active {
+    border-bottom: 1px solid white;
+  }
+  #mainNav {
+    border-color: transparent!important;
+    background-color: transparent; }
+    #mainNav .navbar-brand {
+      color: fade(rgb(0, 52, 158) , 70%); }
+      #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+        color: white; }
+    #mainNav .navbar-nav > li > a,
+    #mainNav .navbar-nav > li > a:focus {
+      color: rgba(255, 255, 255, 0.7); }
+      #mainNav .navbar-nav > li > a:hover,
+      #mainNav .navbar-nav > li > a:focus:hover {
+
+        color: white; }
+    #mainNav.navbar-shrink {
+      border-color: rgba(34, 34, 34, 0.1);
+      background-color: rgb(0, 52, 158); }
+      #mainNav.navbar-shrink .navbar-brand {
+         }
+        #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
+          color: #fdcc52; }
+      #mainNav.navbar-shrink .navbar-nav > li > a,
+      #mainNav.navbar-shrink .navbar-nav > li > a:focus {
+         }
+        #mainNav.navbar-shrink .navbar-nav > li > a:hover,
+        #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
+          color: #fdcc52;
+          }
+}
+
+/* For Mobile */
+@media (max-width: 990px) {
+  /* First Page */
+  header.masthead {
+   background-size: 100vw 115vh!important;
+  }
+  div.header-content {
+   margin-top: -50px;
+  }
+
+  div.second-header {
+    margin-top: 90px;
+  }
+
+  div.second-header h1 {
+    text-align: center;
+  }
+
+  div.second-header p {
+    width: 90%;
+    padding-left: 5%;
+  }
+
+  div.device-container {
+    margin-top: 30px;
+    height: 80vh;
+  }
+
+  section.studies {
+    background-size: 100vw 40vh;
+  }
+
+  section.studies h3 {
+    margin-top: -100px;
+  }
+
+  section.studies h1 {
+    margin-bottom: 30px;
+  }
+
+  section.studies div.studies-row div.card{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+  }
+
+  #page-top > section > div > div:nth-child(3) > div > div > img {
+    margin-top: -30px;
+  }
+}
 
 header.masthead {
   position: relative;
