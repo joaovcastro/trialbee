@@ -17,8 +17,8 @@
     <link href="../vendor/material-design/css/bootstrap-material-design.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../vendor/simple-line-icons/css/simple-line-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -87,7 +87,7 @@
               <!-- Top Row -->
               <div class="row">
                 <div class="col-sm-4">
-                  <div class="card card-sidenav">
+                  <div class="card">
                     <div class="card-body">
                       <div class="img-frame">
                         <img src="../img/details/participant-details.png">
@@ -99,7 +99,7 @@
                   </div>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-4 margin-left">
                   <div class="card">
                     <div class="card-body">
                       <div class="img-frame">
@@ -124,10 +124,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
+
               <!-- Bottom Row -->
-              <div class="row" style="margin-top: 30px;">
-                <div class="col-sm-4">
+                <div class="col-sm-4 margin-left margin-top">
                   <div class="card text-center card-sidenav badge-card">
                     <img class="badge-icon" src="../img/details/alert.png" />
                     <div class="card-body">
@@ -141,7 +140,7 @@
                   </div>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-4 margin-top">
                   <div class="card">
                     <div class="card-body">
                       <div class="img-frame">
@@ -154,7 +153,7 @@
                   </div>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-4 margin-left margin-top">
                   <div class="card">
                     <div class="card-body">
                       <div class="img-frame">
@@ -177,15 +176,16 @@
               <h4 class="uppercase"> Studylist </h4>
               <h1 class="uppercase"> Patients </h1>
             </div>
-            <table class="table">
+            <div style="overflow-x:auto;">
+              <table class="table">
               <thead>
                 <tr>
                   <th> <img class="checkbox-top" src="../img/list/checkbox-on.png"> </th>
                   <th>Site <img class="expand" src="../img/list/expand.png" /> </th>
                   <th>Email <img class="expand" src="../img/list/expand.png" /> </th>
-                  <th>Country <img class="expand" src="../img/list/expand.png" /> </th>
+                  <th>Country <img class="expand country" src="../img/list/expand.png" /> </th>
                   <th>City <img class="expand" src="../img/list/expand.png" /> </th>
-                  <th class="center">Status <img class="expand" src="../img/list/expand.png" /> </th>
+                  <th class="center status">Status <img class="expand" src="../img/list/expand.png" /> </th>
                 </tr>
               </thead>
               <tbody>
@@ -282,6 +282,7 @@
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
       </section>
 

@@ -1,14 +1,17 @@
 
 
 $(document).ready(function() {
-
-
+  // Open side menu
   $('.openNav').click(function() {
-    document.getElementById("mySidenav").style.width = "680px";
+    if ($(window).width() < 500) {
+      document.getElementById("mySidenav").style.width = "100vw";
+    } else {
+      document.getElementById("mySidenav").style.width = "43vw";
+    }
     $(".opacity-layer").show();
   });
 
-
+  // Close side Menu
   $('.closeNav').click(function() {
     document.getElementById("mySidenav").style.width = "0";
     $(".opacity-layer").hide();
@@ -30,6 +33,7 @@ $(document).ready(function() {
       $('img.checkbox').attr("src", "../img/list/checkbox-off.png");
   });
 
+  // Individual checkboxes
   $('.checkbox').click(function() {
     var index = $(this)[0].id - 1;
     if (checkboxes[index] == false){

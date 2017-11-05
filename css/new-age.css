@@ -188,10 +188,6 @@ tr {
   cursor: pointer;
 }
 
-
-
-
-
 /* Carousel Page */
 
 div.white {
@@ -306,17 +302,22 @@ div.carousel-item div.col-md-5 {
  }
 
 
-div.sidenav-header {
-  display: block;
-  margin-left: 30px;
-  text-align: left;
-  padding-bottom: 30px;
-}
+ div.sidenav-header {
+   display: block;
+   margin-left: 30px;
+   text-align: left;
+   padding-bottom: 30px;
+ }
 
 div.sidenav-header div.card-text {
   max-height: 75%;
   vertical-align: middle;
 }
+
+div.sidenav-body  div.margin-top{
+    margin-top: 20px;
+}
+
 
 div.sidenav-body p.card-title{
   font-family: 'Poppins', sans-serif;
@@ -459,9 +460,6 @@ div.sidenav div.card:hover {
 .sidenav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }
-
-/* Position and style the close button (top right corner) */
-
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
@@ -747,7 +745,73 @@ img.list-img {
   #page-top > section > div > div:nth-child(3) > div > div > img {
     margin-top: -30px;
   }
+
+  /* Table Page */
+  section.list-page table td, section.list-page table thead th.expand{
+    width: 10px;
+  }
+
+  .table thead th {
+    width: 130px;
+  }
+
+  .table td {
+    width: 130px!important;
+  }
+
+  .sidenav-body .col-sm-4{
+    width: 40%;
+    margin-bottom: 10px;
+
+  }
+
+  .sidenav-body span {
+    margin-top: 0!important;
+  }
+
+  .sidenav-body .margin-left{
+    margin-left: 30px;
+  }
+
+  .sidenav-body .margin-left-small{
+    margin-left: 21px;
+  }
+
+  div.sidenav-header  {
+    z-index: 996;
+  }
+
+  div.sidenav-body{
+    position: fixed;
+    margin-top: 120px;
+    width: 90%;
+  }
+
+  div.sidenav-body .card{
+    width: 170px!important;
+  }
+
+  div.sidenav a.close-btn {
+      top: -30px!important;
+      right: 10px;
+  }
+
+  div.sidenav-header {
+    position: fixed;
+  }
+
+  th img.expand {
+    display: none;
+  }
+
+  div.margin-top{
+    margin-top: 0!important;
+  }
+
+
+
 }
+
 
 header.masthead {
   position: relative;
