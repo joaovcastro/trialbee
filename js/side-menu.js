@@ -11,6 +11,11 @@ $(document).ready(function() {
     $(".opacity-layer").show();
   });
 
+  $('.opacity-layer').click(function() {
+    $(".opacity-layer").hide();
+    document.getElementById("mySidenav").style.width = "0";
+  });
+
   // Close side Menu
   $('.closeNav').click(function() {
     document.getElementById("mySidenav").style.width = "0";
