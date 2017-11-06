@@ -38,15 +38,34 @@
 	padding-bottom: 61.775701%;
 }
 
-.device-mockup > .device {
-	position: absolute;
-	top: 100px; bottom: 0; left: 0; right: 0;
-	width: 100%; height: 100%;
-	background-size: 130% auto;
-	background-repeat: no-repeat;
+@media (max-width: 990px) {
+	.device-mockup > .device {
+		position: absolute;
+		top: 0; bottom: 0; left: 0; right: 0;
+		width: 90%; height: 100%;
+		background-size: 130% auto;
+		background-repeat: no-repeat;
+		background-image: url("macbook/macbook.png");
+	}
 
-	background-image: url("macbook/macbook.png");
+	header.masthead {
+		padding-bottom: 0!important;
+	}
 }
+
+
+@media (min-width: 992px) {
+	.device-mockup > .device {
+		position: absolute;
+		top: 100px; bottom: 0; left: 0; right: 0;
+		width: 100%; height: 100%;
+		background-size: 130% auto;
+		background-repeat: no-repeat;
+		background-image: url("macbook/macbook.png");
+	}
+}
+
+
 
 .device-mockup > .device > .screen {
 	position: absolute;
