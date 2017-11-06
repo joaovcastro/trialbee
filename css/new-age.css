@@ -736,6 +736,10 @@ div.carousel-content p{
     font-weight: 600!important;
   }
 
+  header.masthead{
+    padding-top:150px;
+  }
+
   body.carousel-page-body {
     width: 96%!important;
   }
